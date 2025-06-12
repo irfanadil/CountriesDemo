@@ -1,8 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    //id("kotlin-kapt")
-    //id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -52,23 +50,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation (libs.androidx.lifecycle.runtime.ktx)
 
 
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
 
-    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation ("com.google.code.gson:gson:2.12.1")
-
-    // daggerHilt
-    //implementation("com.google.dagger:hilt-android:2.55")
-    //kapt("com.google.dagger:hilt-android-compiler:2.55")
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.gson)
 
 
-    implementation ("androidx.recyclerview:recyclerview:1.4.0")
-    implementation ("com.github.bumptech.glide:glide:4.16.0") // For image loading
+    implementation (libs.androidx.recyclerview)
+    implementation (libs.glide) // For image loading
 }
-
-// Allow references to generated code
-//kapt {    correctErrorTypes = true }
