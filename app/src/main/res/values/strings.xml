@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CountriesDemo</string>
+    <string name="separator_with_code">US |</string>
+    <string name="separator_symbol">|</string>
+    <string name="horizontal_separator">-----------------------------------------</string>
+    <string name="country_name_place">United States of America, NA</string>
+    <string name="capital_name_place">Washington, D.C.</string>
 </resources>

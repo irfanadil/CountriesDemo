@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +11,7 @@
         android:id="@+id/text_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="---------------------------------------"
+        android:text="@string/horizontal_separator"
         app:layout_constraintStart_toStartOf="@+id/bar4"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_data" />
 
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintEnd_toEndOf="@+id/text_data"
         app:layout_constraintTop_toTopOf="@+id/bar1" />
 
@@ -39,7 +40,7 @@
         android:id="@+id/bar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintStart_toStartOf="@+id/bar1"
         app:layout_constraintTop_toBottomOf="@+id/bar1" />
 
@@ -48,7 +49,7 @@
         android:id="@+id/bar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintStart_toStartOf="@+id/bar2"
         app:layout_constraintTop_toBottomOf="@+id/bar2" />
 
@@ -57,7 +58,7 @@
         android:id="@+id/bar3_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintEnd_toEndOf="@+id/bar1_a"
         app:layout_constraintTop_toTopOf="@+id/bar3" />
 
@@ -65,7 +66,7 @@
         android:id="@+id/bar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintStart_toStartOf="@+id/bar3"
         app:layout_constraintTop_toBottomOf="@+id/bar3" />
 
@@ -73,8 +74,9 @@
         android:id="@+id/bar4_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="|"
+        android:layout_marginStart="64dp"
+        android:text="@string/separator_symbol"
+
         app:layout_constraintStart_toEndOf="@+id/country_capital"
         app:layout_constraintTop_toBottomOf="@+id/bar3" />
 
@@ -82,7 +84,7 @@
         android:id="@+id/bar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintStart_toStartOf="@+id/bar4"
         app:layout_constraintTop_toBottomOf="@+id/bar4" />
 
@@ -90,7 +92,7 @@
         android:id="@+id/bar5_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="|"
+        android:text="@string/separator_symbol"
         app:layout_constraintEnd_toEndOf="@+id/bar1_a"
         app:layout_constraintTop_toTopOf="@+id/bar5" />
 
@@ -99,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        android:text="---------------------------------------"
+        android:text="@string/horizontal_separator"
         app:layout_constraintStart_toStartOf="@+id/bar5"
         app:layout_constraintTop_toBottomOf="@+id/bar5" />
 
@@ -109,20 +111,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:maxLines="1"
-        android:minWidth="150dp"
-        android:text="United States of America, NA"
+        android:minWidth="117dp"
+        android:text="@string/country_name_place"
         android:textSize="11.5sp"
-        app:layout_constraintEnd_toStartOf="@+id/bar1_a"
         app:layout_constraintStart_toStartOf="@+id/bar2"
         app:layout_constraintTop_toBottomOf="@+id/bar1" />
 
 
     <TextView
         android:id="@+id/country_capital"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Washington, D.C."
-        android:minWidth="150dp"
+        android:minWidth="60dp"
+        android:text="@string/capital_name_place"
         android:textSize="11.5sp"
         app:layout_constraintBottom_toBottomOf="@+id/bar4"
         app:layout_constraintStart_toStartOf="@+id/country_name"
@@ -134,9 +135,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:text="UY |"
+        android:text="@string/separator_with_code"
         android:textSize="11.5sp"
         app:layout_constraintStart_toEndOf="@+id/country_name"
         app:layout_constraintTop_toTopOf="@+id/country_name" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
